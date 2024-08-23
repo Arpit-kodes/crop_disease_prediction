@@ -1,0 +1,326 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #2c3e50;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #a9cce3;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: #ecf0f1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #1abc9c;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0 20px;
+    color: #1abc9c;
+}
+
+.hero .btn {
+    padding: 12px 30px;
+    background-color: #1abc9c;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #16a085;
+}
+
+/* Image Box Gallery */
+.image-box-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 20px;
+}
+
+.image-box {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    background-color: #ffffff;
+    border: 3px solid #ecf0f1;
+    box-sizing: border-box;
+}
+
+.image-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Prediction Section */
+.prediction-section {
+    text-align: center;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.prediction-section h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.prediction-section p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.prediction-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.inputfile {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.upload-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #1abc9c;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.upload-btn:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #ecf0f1;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: #1abc9c;
+    transition: width 0.4s ease;
+}
+
+.prediction-result {
+    margin-top: 2rem;
+    font-size: 18px;
+    color: #2c3e50;
+    min-height: 40px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.prediction-result.success {
+    color: #1abc9c;
+}
+
+.prediction-result.error {
+    color: #e74c3c;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 3rem;
+    background-color: #ffffff;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-section h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    color: #34495e;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.about-section ul li {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    color: #34495e;
+}
+/* Help Section */
+.help-section {
+    text-align: center;
+    padding: 3rem;
+    background-color: #ffffff;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.help-section h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.help-section p {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.help-section ul {
+    list-style-type: disc;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    max-width: 800px;
+}
+
+.help-section ul li {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    color: #34495e;
+}
+
+.help-section a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.help-section a:hover {
+    color: #16a085;
+}
