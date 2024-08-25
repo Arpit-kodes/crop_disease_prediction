@@ -1,4 +1,4 @@
-Deployed link - https://arpitkodes.netlify.app/
+Deployed link - https://kropguard.netlify.app/
 
 
 Crop Disease Prediction
